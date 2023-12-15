@@ -1,16 +1,16 @@
-import { App, Plugin } from 'vue';
+import { App, Plugin } from 'vue-demi';
 export type { DragData, DragerProps } from './src/drager';
 import Drager from './src/drager.vue';
 export declare const install: (app: App) => void;
 export { Drager as ESDrager };
 declare const _default: Plugin & {
     new (...args: any[]): {
-        $: import("vue").ComponentInternalInstance;
+        $: import("vue-demi").ComponentInternalInstance;
         $data: {};
         $props: {
             top?: number | undefined;
             left?: number | undefined;
-            tag?: string | import("vue").Component | undefined;
+            tag?: string | import("vue-demi").Component | undefined;
             resizable?: boolean | undefined;
             rotatable?: boolean | undefined;
             boundary?: boolean | undefined;
@@ -46,45 +46,45 @@ declare const _default: Plugin & {
             readonly aspectRatio?: number | undefined;
             readonly resizeList?: import("./src/drager").IDotSide[] | undefined;
             key?: string | number | symbol | undefined;
-            ref?: import("vue").VNodeRef | undefined;
+            ref?: import("vue-demi").VNodeRef | undefined;
             ref_for?: boolean | undefined;
             ref_key?: string | undefined;
-            onVnodeBeforeMount?: ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            onVnodeBeforeMount?: ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
-            }>) => void) | ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-                [key: string]: any;
-            }>) => void)[] | undefined;
-            onVnodeMounted?: ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-                [key: string]: any;
-            }>) => void) | ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            }>) => void) | ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
             }>) => void)[] | undefined;
-            onVnodeBeforeUpdate?: ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            onVnodeMounted?: ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
-            }>, oldVNode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-                [key: string]: any;
-            }>) => void) | ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-                [key: string]: any;
-            }>, oldVNode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            }>) => void) | ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
             }>) => void)[] | undefined;
-            onVnodeUpdated?: ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            onVnodeBeforeUpdate?: ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
-            }>, oldVNode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            }>, oldVNode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
-            }>) => void) | ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            }>) => void) | ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
-            }>, oldVNode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-                [key: string]: any;
-            }>) => void)[] | undefined;
-            onVnodeBeforeUnmount?: ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-                [key: string]: any;
-            }>) => void) | ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            }>, oldVNode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
             }>) => void)[] | undefined;
-            onVnodeUnmounted?: ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            onVnodeUpdated?: ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
-            }>) => void) | ((vnode: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
+            }>, oldVNode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
+                [key: string]: any;
+            }>) => void) | ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
+                [key: string]: any;
+            }>, oldVNode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
+                [key: string]: any;
+            }>) => void)[] | undefined;
+            onVnodeBeforeUnmount?: ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
+                [key: string]: any;
+            }>) => void) | ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
+                [key: string]: any;
+            }>) => void)[] | undefined;
+            onVnodeUnmounted?: ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
+                [key: string]: any;
+            }>) => void) | ((vnode: import("vue-demi").VNode<import("vue-demi").RendererNode, import("vue-demi").RendererElement, {
                 [key: string]: any;
             }>) => void)[] | undefined;
             class?: unknown;
@@ -97,15 +97,15 @@ declare const _default: Plugin & {
             [x: string]: unknown;
         };
         $slots: Readonly<{
-            [name: string]: import("vue").Slot<any> | undefined;
+            [name: string]: import("vue-demi").Slot<any> | undefined;
         }>;
-        $root: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
-        $parent: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $root: import("vue-demi").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue-demi").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $parent: import("vue-demi").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue-demi").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
         $emit: (event: "change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end", ...args: any[]) => void;
         $el: any;
-        $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
+        $options: import("vue-demi").ComponentOptionsBase<Readonly<import("vue-demi").ExtractPropTypes<{
             tag: {
-                type: import("vue").PropType<string | import("vue").Component>;
+                type: import("vue-demi").PropType<string | import("vue-demi").Component>;
                 default: string;
             };
             resizable: {
@@ -187,7 +187,7 @@ declare const _default: Plugin & {
                 default: boolean;
             };
             resizeList: {
-                type: import("vue").PropType<import("./src/drager").IDotSide[]>;
+                type: import("vue-demi").PropType<import("./src/drager").IDotSide[]>;
             };
             equalProportion: {
                 type: BooleanConstructor;
@@ -206,10 +206,10 @@ declare const _default: Plugin & {
             onRotate?: ((...args: any[]) => any) | undefined;
             "onRotate-start"?: ((...args: any[]) => any) | undefined;
             "onRotate-end"?: ((...args: any[]) => any) | undefined;
-        }, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end")[], string, {
+        }, {}, unknown, {}, {}, import("vue-demi").ComponentOptionsMixin, import("vue-demi").ComponentOptionsMixin, ("change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end")[], string, {
             top: number;
             left: number;
-            tag: string | import("vue").Component;
+            tag: string | import("vue-demi").Component;
             resizable: boolean;
             rotatable: boolean;
             boundary: boolean;
@@ -245,16 +245,16 @@ declare const _default: Plugin & {
             beforeUnmount?: ((() => void) | (() => void)[]) | undefined;
             destroyed?: ((() => void) | (() => void)[]) | undefined;
             unmounted?: ((() => void) | (() => void)[]) | undefined;
-            renderTracked?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
-            renderTriggered?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
-            errorCaptured?: (((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
+            renderTracked?: (((e: import("vue-demi").DebuggerEvent) => void) | ((e: import("vue-demi").DebuggerEvent) => void)[]) | undefined;
+            renderTriggered?: (((e: import("vue-demi").DebuggerEvent) => void) | ((e: import("vue-demi").DebuggerEvent) => void)[]) | undefined;
+            errorCaptured?: (((err: unknown, instance: import("vue-demi").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue-demi").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import("vue-demi").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue-demi").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
         };
         $forceUpdate: () => void;
-        $nextTick: typeof import("vue").nextTick;
-        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import("vue").WatchOptions<boolean> | undefined): import("vue").WatchStopHandle;
-    } & Readonly<import("vue").ExtractPropTypes<{
+        $nextTick: typeof import("vue-demi").nextTick;
+        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import("vue-demi").WatchOptions<boolean> | undefined): import("vue-demi").WatchStopHandle;
+    } & Readonly<import("vue-demi").ExtractPropTypes<{
         tag: {
-            type: import("vue").PropType<string | import("vue").Component>;
+            type: import("vue-demi").PropType<string | import("vue-demi").Component>;
             default: string;
         };
         resizable: {
@@ -336,7 +336,7 @@ declare const _default: Plugin & {
             default: boolean;
         };
         resizeList: {
-            type: import("vue").PropType<import("./src/drager").IDotSide[]>;
+            type: import("vue-demi").PropType<import("./src/drager").IDotSide[]>;
         };
         equalProportion: {
             type: BooleanConstructor;
@@ -355,13 +355,13 @@ declare const _default: Plugin & {
         onRotate?: ((...args: any[]) => any) | undefined;
         "onRotate-start"?: ((...args: any[]) => any) | undefined;
         "onRotate-end"?: ((...args: any[]) => any) | undefined;
-    } & import("vue").ShallowUnwrapRef<{}> & {} & import("vue").ComponentCustomProperties & {};
+    } & import("vue-demi").ShallowUnwrapRef<{}> & {} & import("vue-demi").ComponentCustomProperties & {};
     __isFragment?: undefined;
     __isTeleport?: undefined;
     __isSuspense?: undefined;
-} & import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
+} & import("vue-demi").ComponentOptionsBase<Readonly<import("vue-demi").ExtractPropTypes<{
     tag: {
-        type: import("vue").PropType<string | import("vue").Component>;
+        type: import("vue-demi").PropType<string | import("vue-demi").Component>;
         default: string;
     };
     resizable: {
@@ -443,7 +443,7 @@ declare const _default: Plugin & {
         default: boolean;
     };
     resizeList: {
-        type: import("vue").PropType<import("./src/drager").IDotSide[]>;
+        type: import("vue-demi").PropType<import("./src/drager").IDotSide[]>;
     };
     equalProportion: {
         type: BooleanConstructor;
@@ -462,10 +462,10 @@ declare const _default: Plugin & {
     onRotate?: ((...args: any[]) => any) | undefined;
     "onRotate-start"?: ((...args: any[]) => any) | undefined;
     "onRotate-end"?: ((...args: any[]) => any) | undefined;
-}, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end")[], "change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end", {
+}, {}, unknown, {}, {}, import("vue-demi").ComponentOptionsMixin, import("vue-demi").ComponentOptionsMixin, ("change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end")[], "change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end", {
     top: number;
     left: number;
-    tag: string | import("vue").Component;
+    tag: string | import("vue-demi").Component;
     resizable: boolean;
     rotatable: boolean;
     boundary: boolean;
@@ -488,5 +488,5 @@ declare const _default: Plugin & {
     border: boolean;
     equalProportion: boolean;
     checkCollision: boolean;
-}, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+}, {}, string, {}> & import("vue-demi").VNodeProps & import("vue-demi").AllowedComponentProps & import("vue-demi").ComponentCustomProps;
 export default _default;

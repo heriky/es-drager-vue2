@@ -1,4 +1,4 @@
-import { App, Plugin } from 'vue'
+import { App, Plugin } from 'vue-demi'
 export type { DragData, DragerProps } from './src/drager'
 import Drager from './src/drager.vue'
 

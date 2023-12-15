@@ -47,7 +47,7 @@ import {
   watch,
   ComponentPublicInstance,
   CSSProperties
-} from 'vue'
+} from 'vue-demi'
 import { DragData, DragerProps, EventType } from './drager'
 import { useDrager } from './use-drager'
 import {

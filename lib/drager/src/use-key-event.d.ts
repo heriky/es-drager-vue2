@@ -1,4 +1,4 @@
-import { Ref, ExtractPropTypes } from 'vue';
+import { Ref, ExtractPropTypes } from 'vue-demi';
 import { DragerProps, DragData } from './drager';
 type UtilFN = {
     getBoundary: Function;

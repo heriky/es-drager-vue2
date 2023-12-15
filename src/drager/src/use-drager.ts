@@ -3,7 +3,7 @@ import {
   onMounted,
   ref,
   ExtractPropTypes
-} from 'vue'
+} from 'vue-demi'
 import { DragerProps, DragData } from './drager'
 import {
   setupMove,

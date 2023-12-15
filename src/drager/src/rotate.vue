@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, PropType } from 'vue'
+import { ref, computed, PropType } from 'vue-demi'
 import { getXY, MouseTouchEvent, setupMove } from './utils'
 
 const props = defineProps({

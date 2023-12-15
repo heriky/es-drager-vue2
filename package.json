@@ -1,6 +1,6 @@
 {
-  "name": "es-drager",
-  "version": "1.2.2",
+  "name": "es-drager-vue2",
+  "version": "0.0.1",
   "description": "A draggable, resizable, rotatable component based on vue3",
   "keywords": [
     "drag",
@@ -46,7 +46,8 @@
   ],
   "dependencies": {
     "es-drager": "^1.2.1",
-    "vue": ">=3.2.0"
+    "vue": ">=3.2.0",
+    "vue-demi": "latest"
   },
   "devDependencies": {
     "@types/node": "^18.15.13",
@@ -59,7 +60,13 @@
     "vue-tsc": "^1.2.0"
   },
   "peerDependencies": {
-    "vue": ">=3.2.0"
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   },
   "typings": "lib/drager/index.d.ts"
 }

@@ -1,4 +1,4 @@
-import { PropType } from 'vue';
+import { PropType } from 'vue-demi';
 declare const _sfc_main: import("vue").DefineComponent<{
     modelValue: {
         type: NumberConstructor;

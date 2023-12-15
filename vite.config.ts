@@ -5,6 +5,9 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [dts(), vue()],
+  optimizeDeps: {
+    exclude: ['vue-demi']
+ },
   build: {
     outDir: 'lib',
     lib: {

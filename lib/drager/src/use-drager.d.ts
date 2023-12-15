@@ -1,4 +1,4 @@
-import { Ref, ExtractPropTypes } from 'vue';
+import { Ref, ExtractPropTypes } from 'vue-demi';
 import { DragerProps } from './drager';
 export declare function useDrager(targetRef: Ref<HTMLElement | null>, props: ExtractPropTypes<typeof DragerProps>, emit: Function): {
     isMousedown: Ref<boolean>;
