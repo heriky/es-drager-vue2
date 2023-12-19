@@ -1,26 +1,29 @@
-import { PropType } from 'vue-demi';
 declare const _sfc_main: import("vue").DefineComponent<{
-    modelValue: {
+    value: {
         type: NumberConstructor;
         default: number;
     };
     element: {
-        type: PropType<HTMLElement | null>;
+        type: {
+            new (): HTMLElement;
+            prototype: HTMLElement;
+        };
+        default: null;
     };
-}, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("rotate" | "rotate-start" | "rotate-end" | "update:modelValue")[], "rotate" | "rotate-start" | "rotate-end" | "update:modelValue", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
-    modelValue: {
+}, {}, {}, {}, {}, import("vue/types/v3-component-options").ComponentOptionsMixin, import("vue/types/v3-component-options").ComponentOptionsMixin, ("rotate" | "rotate-start" | "rotate-end" | "input")[], string, Readonly<import("vue").ExtractPropTypes<{
+    value: {
         type: NumberConstructor;
         default: number;
     };
     element: {
-        type: PropType<HTMLElement | null>;
+        type: {
+            new (): HTMLElement;
+            prototype: HTMLElement;
+        };
+        default: null;
     };
-}>> & {
-    onRotate?: ((...args: any[]) => any) | undefined;
-    "onRotate-start"?: ((...args: any[]) => any) | undefined;
-    "onRotate-end"?: ((...args: any[]) => any) | undefined;
-    "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
-}, {
-    modelValue: number;
-}, {}>;
+}>>, {
+    value: number;
+    element: HTMLElement;
+}>;
 export default _sfc_main;

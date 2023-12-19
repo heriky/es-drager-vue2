@@ -1,4 +1,4 @@
-import { Component, PropType } from 'vue-demi'
+import { Component, PropType } from 'vue'
 
 export type IDotSide =
   | 'top'

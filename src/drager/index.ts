@@ -1,12 +1,11 @@
-import { App, Plugin } from 'vue-demi'
 export type { DragData, DragerProps } from './src/drager'
 import Drager from './src/drager.vue'
 
-export const install = (app: App) => {
-  app.component('es-drager', Drager)
+export const install = (Vue: any) => {
+  Vue.component('es-drager', Drager)
 }
 
 Drager.install = install
 
 export { Drager as ESDrager }
-export default Drager as Plugin & typeof Drager
+export default Drager as any & typeof Drager

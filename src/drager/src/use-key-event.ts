@@ -3,7 +3,7 @@ import {
   ExtractPropTypes,
   watch,
   onBeforeUnmount
-} from 'vue-demi'
+} from 'vue'
 import { DragerProps, DragData } from './drager'
 type UtilFN = {
   getBoundary: Function,

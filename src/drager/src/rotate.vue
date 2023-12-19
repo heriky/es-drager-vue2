@@ -19,21 +19,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, PropType } from 'vue-demi'
+import { ref, computed, PropType } from 'vue'
 import { getXY, MouseTouchEvent, setupMove } from './utils'
 
 const props = defineProps({
-  modelValue: {
+  value: {
     type: Number,
     default: 0
   },
   element: {
-    type: Object as PropType<HTMLElement | null>
+    type: HTMLElement,
+    default: null,
   }
 })
 
 const emit = defineEmits([
-  'update:modelValue',
+  'input',
   'rotate',
   'rotate-start',
   'rotate-end'
@@ -41,9 +42,9 @@ const emit = defineEmits([
 
 const rotateRef = ref<HTMLElement | null>(null)
 const angle = computed({
-  get: () => props.modelValue,
+  get: () => props.value,
   set: val => {
-    emit('update:modelValue', val)
+    emit('input', val)
   }
 })
 

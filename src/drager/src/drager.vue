@@ -46,8 +46,7 @@ import {
   ref,
   watch,
   ComponentPublicInstance,
-  CSSProperties
-} from 'vue-demi'
+} from 'vue'
 import { DragData, DragerProps, EventType } from './drager'
 import { useDrager } from './use-drager'
 import {
@@ -64,6 +63,8 @@ import {
   MouseTouchEvent
 } from './utils'
 import Rotate from './rotate.vue'
+
+type CSSProperties = any;
 
 const props = defineProps(DragerProps)
 const emit = defineEmits([
@@ -111,6 +112,7 @@ const dragStyle = computed(() => {
 })
 function setRef(el: ComponentPublicInstance | HTMLElement) {
   if (dragRef.value) return
+  // @ts-ignore
   dragRef.value = (el as ComponentPublicInstance).$el || el
 }
 function handleRotateEnd(angle: number) {
